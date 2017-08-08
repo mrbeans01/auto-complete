@@ -1,0 +1,36 @@
+<div class="mysearch">
+  <div class="searchInput">
+
+    <div class="note"> <small>Note :- Min 3 character</small></div>
+    <input id="searchInput" type="search" [(ngModel)]="myProduct"  (input)="filterData(myInput.value)" #myInput tabindex="-1" (keyup)="keyPress($event)" placeholder="Search">
+    <div *ngIf="myInput.value && myInput.value.length >= minChar && !found">
+      <div class="list-card">
+        <ul >
+          <li>
+            No results found.
+        </li>
+        </ul>
+      </div>
+    </div>
+    <div class="list-card" *ngIf="filteredProducts.length > 0">
+      <ul  >
+        <li *ngFor="let product of filteredProducts; let i = index" [attr.data-index]="i" (click)="selectProduct(product)"  [class.active]="i == arrowkeyLocation"  [ngClass]="getClass(product)">
+          <div>{{product.name}}</div>
+            <div><small>{{product.url}}</small></div>
+        </li>
+      </ul>
+    </div>
+
+
+    <div class="list-card result" *ngIf="selectedProduct">
+      <ul  >
+        <li [ngClass]="getClass(selectedProduct)">
+          <div>{{selectedProduct.name}}</div>
+          <div><small>{{selectedProduct.url}}</small></div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+

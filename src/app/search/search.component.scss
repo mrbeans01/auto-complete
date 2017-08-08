@@ -1,0 +1,103 @@
+.mysearch {
+  width: 100%;
+  margin-top: 30%;
+  margin: auto;
+  height: 100px;
+
+  .searchInput {
+    min-width: 200px;
+    width: 60%;
+    margin: auto;
+
+    .note {
+      margin-bottom: 5px;
+      color: gray;
+    }
+    input {
+      width: 100%;
+      background-color: #fff;
+      height: 40px;
+      border: 1px solid #c3a5c2;
+      padding-left: 10px;
+      padding-right: 10px;
+      font-size: 1.5rem;
+    }
+
+    input:focus {
+      background-color: #fff;
+    }
+  }
+
+  .list-card {
+    ul {
+      list-style: none;
+      padding-left: 2px;
+      padding: 0px;
+      margin: 0px;
+
+      li {
+        width: 100%;
+        box-sizing: border-box;
+        background-color: #f1f1f1;
+        margin-top: 1px;
+        height: 50px;
+        padding: 3px;
+      }
+
+      li:hover {
+        background-color: #d1d1d1;
+      }
+      li.active {
+        background-color: #c1c1c1;
+      }
+
+      .cc {
+        background-image: url('../../assets/img/cc.png');
+        background-size: 30px 30px;
+        background-repeat: no-repeat;
+        background-position: left center;
+        padding-left: 40px;
+      }
+
+      .bank {
+        background-image: url('../../assets/img/bank.png');
+        background-repeat: no-repeat;
+        background-position: left center;
+        background-size: 30px 30px;
+        padding-left: 40px;
+      }
+
+      .loan {
+        background-image: url('../../assets/img/loan.png');
+        background-repeat: no-repeat;
+        background-position: left center;
+        background-size: 30px 30px;
+        padding-left: 40px;
+      }
+
+
+      .invest {
+        background-image: url('../../assets/img/invest.png');
+        background-repeat: no-repeat;
+        background-position: left center;
+        background-size: 30px 30px;
+        padding-left: 40px;
+      }
+
+      .mort {
+        background-image: url('../../assets/img/mortgage.png');
+        background-repeat: no-repeat;
+        background-position: left center;
+        background-size: 30px 30px;
+        padding-left: 40px;
+      }
+
+    }
+
+  }
+
+  .result{
+    margin-top: 40px;
+  }
+
+}
