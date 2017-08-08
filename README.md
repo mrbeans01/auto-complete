@@ -14,7 +14,7 @@ Development environment set up .
  Node Development Environment is ready 
 
 Clone or unzip and run 
-1. clone or download project form  https://github.com/mrbeans01/auto-complete;
+1. clone or download project form  https://github.com/mrbeans01/auto-complete or unzip code if you have zip version of code .
 2. Open terminal or command prompt and go to project root folder (auto-complete) and check for package.json it should be there , and then  
 2. run npm install 
 2. Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`.
